@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+ul {
+
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
