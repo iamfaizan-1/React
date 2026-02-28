@@ -1,5 +1,5 @@
 import Card from "./Component/Card"
-
+import Header from "./Component/Header"
 
 const data = [
 
@@ -45,7 +45,7 @@ function App() {
   return (
     <div>
 
-
+<Header/>
       {/* {
 
         data.map((item, index) => (
