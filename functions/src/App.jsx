@@ -1,6 +1,7 @@
 import React from 'react'
 import Functions from './Components/Functions'
 import Login from "./Components/Login"
+import Map from './Components/Map'
 function App() {
   return (
     <div>
@@ -8,6 +9,7 @@ function App() {
 
 <Functions/>
       <Login/>
+      <Map/>
     </div>
   )
 }
