@@ -6,6 +6,7 @@ import Object from "../src/Components/Object"
 import Arrayofobjects from '../src/Components/Arrayofobjects'
 import ConditionalRendering from '../src/Components/ConditionalRendering'
 import SimpleForm from './Components/SimpleForm'
+import MultiInput from './Components/MultiInput'
 function App() {
   return (
     <div>
@@ -18,6 +19,7 @@ function App() {
       <Arrayofobjects/>
       <ConditionalRendering/>
       <SimpleForm/>
+      <MultiInput/>
     </div>
   )
 }
