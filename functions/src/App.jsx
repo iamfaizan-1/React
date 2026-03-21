@@ -5,6 +5,7 @@ import Map from '../src/Components/Map'
 import Object from "../src/Components/Object"
 import Arrayofobjects from '../src/Components/Arrayofobjects'
 import ConditionalRendering from '../src/Components/ConditionalRendering'
+import SimpleForm from './Components/SimpleForm'
 function App() {
   return (
     <div>
@@ -16,6 +17,7 @@ function App() {
       <Object/>
       <Arrayofobjects/>
       <ConditionalRendering/>
+      <SimpleForm/>
     </div>
   )
 }
