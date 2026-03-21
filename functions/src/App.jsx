@@ -1,8 +1,10 @@
 import React from 'react'
-import Functions from './Components/Functions'
-import Login from "./Components/Login"
-import Map from './Components/Map'
-import Object from "./Components/Object"
+import Functions from '../src/Components/Functions'
+import Login from "../src/Components/Login"
+import Map from '../src/Components/Map'
+import Object from "../src/Components/Object"
+import Arrayofobjects from '../src/Components/Arrayofobjects'
+import ConditionalRendering from '../src/Components/ConditionalRendering'
 function App() {
   return (
     <div>
@@ -12,6 +14,8 @@ function App() {
       <Login/>
       <Map/>
       <Object/>
+      <Arrayofobjects/>
+      <ConditionalRendering/>
     </div>
   )
 }
