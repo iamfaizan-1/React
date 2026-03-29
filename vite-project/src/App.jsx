@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './Components/Header'
-
+import Router from './Router/Router'
 function App() {
   
   //1st  method of styling
@@ -12,13 +12,7 @@ function App() {
   
   
   return (
-    <div>
-<h1 style={headingStyle} >My name is faizan</h1>
-<Header/>
-
-
-
-    </div>
+    <Router/>
   )
 }
 
