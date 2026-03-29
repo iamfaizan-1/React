@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router";
 import Dashboard from "../Pages/Dashboard";
+import ReduxComponent from "../Components/ReduxComponent";
 
 
 const router = createBrowserRouter([
@@ -8,6 +9,10 @@ const router = createBrowserRouter([
 {
 path: '/',
 Component: Dashboard
+},
+{
+    path: "/counter",
+    component: ReduxComponent
 }
 
 ])
