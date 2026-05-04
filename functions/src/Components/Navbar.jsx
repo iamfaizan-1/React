@@ -1,10 +1,8 @@
-import React, { useState } from 'react'
-import { HiMenu, HiX } from 'react-icons/hi';
-import { Link } from 'react-router-dom'
+import React, { useState } from "react";
+import { HiMenu, HiX } from "react-icons/hi";
 
-function Navbar() {
-  
- const [open, setOpen] = useState(false);
+const Navbar = () => {
+  const [open, setOpen] = useState(false);
 
   return (
     <nav className="flex items-center justify-between px-6 py-4 bg-gray-800 text-white relative">
@@ -27,17 +25,17 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <ul
-  className={`md:hidden absolute top-[62px] left-0 w-full bg-gray-800 flex flex-col items-center gap-6 overflow-hidden 
-  transition-all duration-300 ease-in-out
-  ${open ? "max-h-60 py-6" : "max-h-0 py-0"}`}
->
-  <li>Home</li>
-  <li>About</li>
-  <li>Services</li>
-  <li>Contact</li>
-</ul>
+        className={`md:hidden absolute top-16 left-0 w-full bg-gray-800 flex flex-col items-center gap-6 py-6 transition-all duration-300 ${
+          open ? "block" : "hidden"
+        }`}
+      >
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

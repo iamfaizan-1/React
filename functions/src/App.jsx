@@ -12,14 +12,17 @@ function App() {
     <div>
 
 
-<Functions/>
-      <Login/>
+{/* <Functions/> */}
+      {/* <Login/>
       <Map/>
       <Object/>
       <Arrayofobjects/>
       <ConditionalRendering/>
       <SimpleForm/>
-      <MultiInput/>
+      <MultiInput/> */}
+
+<Navbar/>
+
     </div>
   )
 }
