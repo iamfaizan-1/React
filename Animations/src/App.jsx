@@ -31,6 +31,30 @@ transition:{
   
   </motion.div> 
 
+
+<motion.div  className="myDiv2"
+
+initial ={
+  {
+    scale : 0
+  }
+
+  
+}
+
+whileHover ={{
+scale:3
+  }}
+
+  animate={{
+    scale:2,
+    transition:{
+      duration:2
+    }
+  }}
+>
+
+  </motion.div>
 </div>
 
     </div>
