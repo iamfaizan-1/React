@@ -4,6 +4,8 @@ import React from 'react'
 import "./App.css"
 import {gsap} from "gsap";
 import { useGSAP } from '@gsap/react'
+import Timeline from './Components/Timeline';
+import Button from './Components/Button';
 
 
 
@@ -63,37 +65,37 @@ function App() {
 
 // 4. gsap.timeline
 
-const timeline = gsap.timeline(
-{
-  yoyo:true,
-  repeat:-1,
-  repeatDelay:1
-}
-)
+// const timeline = gsap.timeline(
+// {
+//   yoyo:true,
+//   repeat:-1,
+//   repeatDelay:1
+// }
+// )
 
-useGSAP(()=>{
-timeline.to('#box-1',{
-  x:150,
-  duration:1,
-  borderRadius:"100%",
-  ease:"back.inOut",
-  rotation:"360"
-}),
+// useGSAP(()=>{
+// timeline.to('#box-1',{
+//   x:150,
+//   duration:1,
+//   borderRadius:"100%",
+//   ease:"back.inOut",
+//   rotation:"360"
+// }),
 
 
-timeline.to('#box-1',{
+// timeline.to('#box-1',{
 
-  x:250,
-  duration:1,
-  borderRadius:"8%",
-  rotation:"360",
-  ease:"back.inOut"
+//   x:250,
+//   duration:1,
+//   borderRadius:"8%",
+//   rotation:"360",
+//   ease:"back.inOut"
   
-})
+// })
 
 
 
-},[])
+// },[])
 
 
 
@@ -154,10 +156,11 @@ scale:3
 
 {/* gsap animations */}
 
-<div id="box-1" className="box w-[100px] h-[100px] flex justify-center items-center bg-blue-500 rounded-sm">
+{/* <div id="box-1" className="box w-[100px] h-[100px] flex justify-center items-center bg-blue-500 rounded-sm">
   hello
-</div>
+</div> */}
 
+<Button/>
     </div>
   )
 }
